@@ -8,20 +8,20 @@ for (x = 1; x <= 100; x++) {
     numberBox = document.createElement('div');
     numberBox.classList.add('number-box');
 
-    if (x % 3 == 0   &&   !(x % 3 == 0   &&   x % 5 == 0)) {
+    if (x % 3 == 0   &&   x % 5 == 0) {
 
-        numberBox.classList.add('fizz');
-        numberBox.innerHTML = "Fizz";
+        numberBox.classList.add('fizz-buzz');
+        numberBox.innerHTML = "FizzBuzz";
         
-    } else if (x % 5 == 0   &&   !(x % 3 == 0   &&   x % 5 == 0)) {
+    } else if (x % 5 == 0) {
         
         numberBox.classList.add('buzz');
         numberBox.innerHTML = "Buzz";
         
-    } else if (x % 3 == 0   &&   x % 5 == 0) {
+    } else if (x % 3 == 0) {
         
-        numberBox.classList.add('fizz-buzz');
-        numberBox.innerHTML = "FizzBuzz";
+        numberBox.classList.add('fizz');
+        numberBox.innerHTML = "Fizz";
         
     } else {
 
