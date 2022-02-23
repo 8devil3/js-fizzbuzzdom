@@ -3,7 +3,7 @@ let divNumberBox;
 
 
 // Mauro, lo so che detesti i contatori nominati con "i", "x", ecc. ma per ora va bene così
-for (x = 1; x <= 100; x++) {
+for (let x = 1; x <= 100; x++) {
     
     divNumberBox = document.createElement('div');
     divNumberBox.classList.add('number-box');
