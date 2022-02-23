@@ -37,24 +37,31 @@ h1 {
 }
 
 .number-box {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--grey);
     margin: 0.5rem;
+    border-radius: 50%;
 }
 
 .fizz {
     background-color: var(--brown);
+    font-weight: 700;
+    box-shadow: 0 0 0 4px #752f00;
 }
 
 .buzz {
     background-color: var(--orange);
+    font-weight: 700;
+    box-shadow: 0 0 0 4px #bd5500;
 }
 
 .fizz-buzz {
     background-color: var(--yellow);
     color: #1a1a1a;
+    font-weight: 700;
+    box-shadow: 0 0 0 4px #be8200;
 }
