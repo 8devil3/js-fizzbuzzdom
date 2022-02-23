@@ -1,33 +1,33 @@
 let divContainer = document.querySelector('.container');
-let numberBox;
+let divNumberBox;
 
 
 // Mauro, lo so che detesti i contatori nominati con "i", "x", ecc. ma per ora va bene così
 for (x = 1; x <= 100; x++) {
     
-    numberBox = document.createElement('div');
-    numberBox.classList.add('number-box');
+    divNumberBox = document.createElement('div');
+    divNumberBox.classList.add('number-box');
 
     if (x % 3 == 0   &&   x % 5 == 0) {
 
-        numberBox.classList.add('fizz-buzz');
-        numberBox.innerHTML = "FizzBuzz";
+        divNumberBox.classList.add('fizz-buzz');
+        divNumberBox.innerHTML = "FizzBuzz";
         
     } else if (x % 5 == 0) {
         
-        numberBox.classList.add('buzz');
-        numberBox.innerHTML = "Buzz";
+        divNumberBox.classList.add('buzz');
+        divNumberBox.innerHTML = "Buzz";
         
     } else if (x % 3 == 0) {
         
-        numberBox.classList.add('fizz');
-        numberBox.innerHTML = "Fizz";
+        divNumberBox.classList.add('fizz');
+        divNumberBox.innerHTML = "Fizz";
         
     } else {
 
-        numberBox.innerHTML = x;
+        divNumberBox.innerHTML = x;
 
     }
     
-    divContainer.append(numberBox);
+    divContainer.append(divNumberBox);
 }
